@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Sample】background-clip</title>
+    <link rel="stylesheet" href="/modern-css-reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <h1>background-clip</h1>
+    <section>
+        <h2>background-clip: initial;</h2>
+        <div id="initial" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>background-clip: border-box;</h2>
+        <div id="border-box" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>background-clip: padding-box;</h2>
+        <div id="padding-box" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>background-clip: content-box;</h2>
+        <div id="content-box" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>background-clip: text;</h2>
+        <div id="text" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>background-clip: text; (with gradation)</h2>
+        <div id="gradation" class="contents">This is the content of the element.</div>
+    </section>
+    <section>
+        <h2>with no background-clip (with extra element)</h2>
+        <div id="no-clip" class="contents">
+            <!-- background-clipなしだと要素を増やす必要がある -->
+            <span>This is the content of the element.</span>
+        </div>
+    </section>
+</body>
+</html>

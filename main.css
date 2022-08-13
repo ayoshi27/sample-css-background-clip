@@ -1,0 +1,52 @@
+.contents {
+	display: grid;
+	justify-items: center;
+	width: 300px;
+	height: 200px;
+	border: 15px dashed #354c63;
+	margin: calc(20px + 40px) auto 0;
+	padding: 40px;
+	background: #4dba89;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#initial {
+	background-clip: initial;
+}
+
+#border-box {
+	background-clip: border-box;
+}
+
+#padding-box {
+	background-clip: padding-box;
+}
+
+#content-box {
+	background-clip: content-box;
+}
+
+#text {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+#gradation {
+	background: rgb(72, 186, 199);
+	background: linear-gradient(82deg, rgba(72, 186, 199, 1) 31%, rgba(77, 186, 137, 1) 51%, rgba(255, 186, 199, 1) 65%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+/* background-clipなしだと要素を増やす必要がある */
+#no-clip {
+	background: #fff;
+}
+
+#no-clip span {
+	background: #fff;
+	background: #4dba89;
+}
